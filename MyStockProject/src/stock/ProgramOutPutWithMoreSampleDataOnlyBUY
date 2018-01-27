@@ -1,0 +1,87 @@
+Started execution of StockMarket thread...
+Initializing Stock Market....
+Stockname: foo | Currency: SGD | AgreedFx: 0.5
+Stockname: bar | Currency: AED | AgreedFx: 0.22
+Stockname: myStock1 | Currency: USD | AgreedFx: 0.67
+Stockname: myStock2 | Currency: AUD | AgreedFx: 0.38
+--------------------------------------------------------------------------------------------------
+Setting up stock price per unit...
+Stock: bar |  Current price: 150.5
+Stock: myStock2 |  Current price: 234.06
+Stock: myStock1 |  Current price: 367.66
+Stock: foo |  Current price: 100.25
+--------------------------------------------------------------------------------------------------
+Portfolio before trading....
+Stock: bar |  Current holdings: 500
+Stock: myStock2 |  Current holdings: 400
+Stock: foo |  Current holdings: 500
+Stock: myStock1 |  Current holdings: 350
+--------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Trade execution starts ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Buying stock: foo | Quantity: 200
+Instructed settlement date :Mon Jan 04 00:00:00 IST 2016 | Currency: SGD | Actual settlement date for this currency:Mon Jan 04 00:00:00 IST 2016
+Total traded value in USD: 10025.0
+------------------------------------------------------------------------------------
+Buying stock: bar | Quantity: 450
+Instructed settlement date :Thu Jan 07 00:00:00 IST 2016 | Currency: AED | Actual settlement date for this currency:Thu Jan 07 00:00:00 IST 2016
+Total traded value in USD: 14899.5
+------------------------------------------------------------------------------------
+Buying stock: bar | Quantity: 100
+Instructed settlement date :Mon Jun 20 00:00:00 IST 2016 | Currency: AED | Actual settlement date for this currency:Mon Jun 20 00:00:00 IST 2016
+Total traded value in USD: 3311.0
+------------------------------------------------------------------------------------
+Buying stock: myStock1 | Quantity: 15
+Instructed settlement date :Mon Mar 13 00:00:00 IST 2017 | Currency: USD | Actual settlement date for this currency:Mon Mar 13 00:00:00 IST 2017
+Total traded value in USD: 3694.9830000000006
+------------------------------------------------------------------------------------
+Buying stock: myStock1 | Quantity: 600
+Instructed settlement date :Thu Apr 24 00:00:00 IST 2014 | Currency: USD | Actual settlement date for this currency:Thu Apr 24 00:00:00 IST 2014
+Total traded value in USD: 147799.32000000004
+------------------------------------------------------------------------------------
+Buying stock: foo | Quantity: 300
+Instructed settlement date :Tue Dec 25 00:00:00 IST 2018 | Currency: SGD | Actual settlement date for this currency:Tue Dec 25 00:00:00 IST 2018
+Total traded value in USD: 15037.5
+------------------------------------------------------------------------------------
+Buying stock: myStock2 | Quantity: 300
+Instructed settlement date :Mon Jun 01 00:00:00 IST 2015 | Currency: AUD | Actual settlement date for this currency:Mon Jun 01 00:00:00 IST 2015
+Total traded value in USD: 26682.84
+------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Trade execution ends ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Portfolio after trading....
+Stock: bar |  Current holdings: 1050
+Stock: myStock2 |  Current holdings: 700
+Stock: foo |  Current holdings: 1000
+Stock: myStock1 |  Current holdings: 965
+--------------------------------------------------------------------------------------------------
+********************************************* REPORTING *******************************************
+Amount in USD settled outgoing everyday
+--------------------------------------------------------------------------------------------------
+Date trade settled: Tue Dec 25 00:00:00 IST 2018 | Total amount outflown in USD: 15037.5(+)
+Date trade settled: Mon Jun 20 00:00:00 IST 2016 | Total amount outflown in USD: 3311.0(+)
+Date trade settled: Mon Mar 13 00:00:00 IST 2017 | Total amount outflown in USD: 3694.9830000000006(+)
+Date trade settled: Mon Jun 01 00:00:00 IST 2015 | Total amount outflown in USD: 26682.84(+)
+Date trade settled: Thu Jan 07 00:00:00 IST 2016 | Total amount outflown in USD: 14899.5(+)
+Date trade settled: Mon Jan 04 00:00:00 IST 2016 | Total amount outflown in USD: 10025.0(+)
+Date trade settled: Thu Apr 24 00:00:00 IST 2014 | Total amount outflown in USD: 147799.32000000004(+)
+--------------------------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Amount in USD settled incoming everyday
+--------------------------------------------------------------------------------------------------
+**No trading done in this category**
+--------------------------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Entity Ranking outgoing (BUY):
+--------------------------------------------------------------------------------------------------
+Rank : 1 | Entity :myStock1 | Total traded amount in USD: 151494.30300000004
+Rank : 2 | Entity :myStock2 | Total traded amount in USD: 26682.84
+Rank : 3 | Entity :foo | Total traded amount in USD: 25062.5
+Rank : 4 | Entity :bar | Total traded amount in USD: 18210.5
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Entity Ranking incoming (SELL):
+--------------------------------------------------------------------------------------------------
+**No trading done in this category**
+--------------------------------------------------------------------------------------------------
+********************************************* END OF REPORT ****************************************

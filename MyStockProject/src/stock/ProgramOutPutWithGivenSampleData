@@ -1,0 +1,60 @@
+Started execution of StockMarket thread...
+Initializing Stock Market....
+Stockname: foo | Currency: SGD | AgreedFx: 0.5
+Stockname: bar | Currency: AED | AgreedFx: 0.22
+Stockname: myStock1 | Currency: USD | AgreedFx: 0.67
+Stockname: myStock2 | Currency: AUD | AgreedFx: 0.38
+--------------------------------------------------------------------------------------------------
+Setting up stock price per unit...
+Stock: bar |  Current price: 150.5
+Stock: myStock2 |  Current price: 234.06
+Stock: myStock1 |  Current price: 367.66
+Stock: foo |  Current price: 100.25
+--------------------------------------------------------------------------------------------------
+Portfolio before trading....
+Stock: bar |  Current holdings: 500
+Stock: myStock2 |  Current holdings: 400
+Stock: foo |  Current holdings: 500
+Stock: myStock1 |  Current holdings: 350
+--------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Trade execution starts ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Buying stock: foo | Quantity: 200
+Instructed settlement date :Mon Jan 04 00:00:00 IST 2016 | Currency: SGD | Actual settlement date for this currency:Mon Jan 04 00:00:00 IST 2016
+Total traded value in USD: 10025.0
+------------------------------------------------------------------------------------
+Selling stock: bar | Quantity: 450
+Instructed settlement date :Thu Jan 07 00:00:00 IST 2016 | Currency: AED | Actual settlement date for this currency:Thu Jan 07 00:00:00 IST 2016
+Total traded value in USD: -14899.5
+------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Trade execution ends ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Portfolio after trading....
+Stock: bar |  Current holdings: 50
+Stock: myStock2 |  Current holdings: 400
+Stock: foo |  Current holdings: 700
+Stock: myStock1 |  Current holdings: 350
+--------------------------------------------------------------------------------------------------
+********************************************* REPORTING *******************************************
+Amount in USD settled outgoing everyday
+--------------------------------------------------------------------------------------------------
+Date trade settled: Mon Jan 04 00:00:00 IST 2016 | Total amount outflown in USD: 10025.0(+)
+--------------------------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Amount in USD settled incoming everyday
+--------------------------------------------------------------------------------------------------
+Date trade settled: Thu Jan 07 00:00:00 IST 2016 | Total amount incoming in USD: 14899.5(-)
+--------------------------------------------------------------------------------------------------
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Entity Ranking outgoing (BUY):
+--------------------------------------------------------------------------------------------------
+Only one entity traded in this category, so defaulted to top rating..
+Rank : 1 | Entity :foo | Total traded amount in USD: 10025.0
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+Entity Ranking incoming (SELL):
+--------------------------------------------------------------------------------------------------
+Only one entity traded in this category, so defaulted to top rating..
+Rank : 1 | Entity :bar | Total traded amount in USD: 14899.5
+--------------------------------------------------------------------------------------------------
+********************************************* END OF REPORT ****************************************
